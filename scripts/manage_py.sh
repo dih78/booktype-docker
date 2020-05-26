@@ -12,4 +12,4 @@ python /code/mybook/manage_prod.py update_permissions
 python /code/mybook/manage_prod.py update_default_roles
 python /code/mybook/manage_prod.py collectstatic --noinput
 python /code/mybook/manage_prod.py compress
-echo 'from django.contrib.auth.models import User; User.objects.create_superuser("admin", "admin@admin.com", "admin")' | python /code/mybook/manage_dev.py shell
+#echo 'from django.contrib.auth.models import User; User.objects.create_superuser("admin", "admin@admin.com", "admin")' | python /code/mybook/manage_dev.py shell
